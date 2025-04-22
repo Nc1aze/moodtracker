@@ -1,0 +1,71 @@
+:root {
+    --happy: #ffe066;
+    --sad: #74c0fc;
+    --excited: #fab005;
+    --calm: #a5d8ff;
+    --text-color: #333;
+    --bg-light: #f8f9fa;
+    --bg-dark: #212529;
+    --text-dark: #f1f3f5;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+    background: var(--bg-light);
+    color: var(--text-color);
+  }
+  
+  body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .mood-selector {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  
+  .mood {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .mood:hover {
+    transform: scale(1.05);
+  }
+  
+  .history {
+    margin-top: 2rem;
+  }
+  
+  #mood-history {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #toggle-theme {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
